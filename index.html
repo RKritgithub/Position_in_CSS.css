@@ -1,0 +1,100 @@
+<!-- Problem Statement -->
+<!-- Write code to position 5 equal-sized (50 X 50px) boxes A, B, C, D, and E as follows:
+1. box A 200px from the left, and 200px from the top of the viewport.
+2. box B -30px left, and -30px above from the center of box A.
+3. box B -30px right, and -30px above from the center of box A.
+4. box B -30px left, and -30px below from the center of box A.
+5. box B -30px right, and -30px below from the center of box A. -->
+
+<!-- Answers: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        #container{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border: 1px solid black;
+            font-size: 24px;
+        }
+        .box{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            border: 1px solid #000;
+             
+        }
+        .box-1{
+            background-color: darkseagreen;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border: 1px solid lightgreen;
+
+
+        }
+        .box-2{
+            background-color: darkseagreen;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 1px solid lightgreen;
+
+        }
+        .box-3{
+            background-color: darkseagreen;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border: 1px solid lightgreen;
+
+        }
+        .box-4{
+            background-color: darkseagreen;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border: 1px solid lightgreen;
+
+        }
+        .box-5{
+            background-color: darkseagreen;
+            width: 95px;
+            height: 95px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            border: 1px solid lightgreen;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div class="box box-1">A</div>
+    <div class="box box-2">B</div>
+    <div class="box box-3">C</div>
+    <div class="box box-4">D</div>
+    <div class="box box-5">E</div>
+</div>
+    
+</body>
+</html>

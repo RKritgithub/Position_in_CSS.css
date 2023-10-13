@@ -1,0 +1,73 @@
+ <!-- Question5: 
+Explain the z-index, with a code example. 
+ Answers:  -->
+ <!-- it will work only when we have set the position relative absolute fixed sticky etc. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index example</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 1px solid #000;
+            font-size: 24px;
+        }
+        #box1{
+            background-color: darkseagreen;
+            top: 100px;
+            left: 50px;
+           
+
+        }
+        #box2{
+            background-color: peachpuff;
+            top: 150px;
+            left: 100px;
+            z-index: 1;
+            
+
+        }
+        #box3{
+            background-color: lightskyblue;
+            top: 200px;
+            left: 150px;
+
+        }
+        #box4{
+            background-color: #B0578D;
+            top: 250px;
+            left: 200px;
+
+        }
+    
+
+    
+    </style>
+ </head>
+ <body>
+    <h1>CSS z-index</h1>
+    <p>
+    On setting the value of z-index=1 for box B. it is appearing on the top of boxes A,C and D.
+    </p>
+    <div id="box1">A</div>
+    <div id="box2">B</div>
+    <div id="box3">C</div>
+    <div id="box4">D</div>
+    
+ </body>
+ </html>
+ <!-- In CSS, the z-index property is used to control the stacking order of elements in a web page. It determines which elements appear on top of other elements when they overlap in the web page's layout. Elements with a higher z-index value are displayed on top of elements with a lower z-index value. -->
+<!-- 1.The default z-index value is auto, which means elements are stacked in the order they appear in the HTML document, with later elements appearing on top of earlier ones. -->
+
+<!-- 2.Elements with a positive z-index value are brought to the front and displayed on top of elements with auto or negative z-index values. -->
+
+<!-- 3.Elements with a higher z-index value are displayed on top of elements with lower z-index values. -->
+
+<!-- 4.z-index is relative to the stacking context. If two elements are in different stacking contexts, the z-index values of one context do not affect the other context. -->
